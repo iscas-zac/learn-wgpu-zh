@@ -202,15 +202,12 @@ let modes = surface.get_capabilities(&adapter).present_modes;
 现在已经正确地配置了**展示平面**，我们在函数的末尾添加上这些新字段：
 
 ```rust
-        Self {
-            surface,
-            device,
-            queue,
-            config,
-            size,
-        }
-    }
-    // ...
+Self {
+    surface,
+    device,
+    queue,
+    config,
+    size,
 }
 ```
 
@@ -529,7 +526,3 @@ Some(wgpu::RenderPassColorAttachment {
 <WasmExample example="tutorial2_surface"></WasmExample>
 
 <AutoGithubLink/>
-
-## 加入 wgpu 微信学习群交流群
-
-<JoinWeiChatGroup />
